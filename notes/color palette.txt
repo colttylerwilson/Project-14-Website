@@ -1,0 +1,5 @@
+#940f15 - RED
+#ebead9 - WHITE
+#a4b6c1 - GREY?BLUE
+#2e598f - MEDIUM?BLUE
+#0c2141 - DARK?BLUE

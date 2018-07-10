@@ -178,7 +178,6 @@ li a:hover {
 #manufacturing-container #contact-us-button:hover {
     background-color: #0c2141;
 }
-
 /* ABOUT SECTION ENDS */
 
 /* SERVICES SECTION BEGINS */
@@ -189,7 +188,6 @@ li a:hover {
     background-color: #940f15;
     color: #fff;
     height: 100vh;
-    justify-content: center;
 }
 
 #services h1 {
@@ -198,13 +196,27 @@ li a:hover {
     font-weight: bold;
     text-align: center;
     color: #fff;
-    margin: 0;
+    margin: 6vmin auto;
 }
 
 #services-container {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 6fr 2fr;
+    grid-gap: 1vmin 5vmin;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#services-container p {
+    text-align: center;
+}
+
+.icon-image {
+    height: 85%;
+    margin: 5% auto;
+    vertical-align: middle;
 }
 
 .services-flex-box {
@@ -243,6 +255,7 @@ li a:hover {
     border: 2px solid #940f15;
     width: 40vmin;
     height: 10vmin;
+    margin: 0 auto;
 }
 
 .view-more:hover {

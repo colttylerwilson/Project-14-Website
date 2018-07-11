@@ -153,7 +153,7 @@ li a:hover {
     height: auto;
 }
 
-#contact-us-button {
+#contact-us-button, #custom-view-images-button, #military-view-images-button, #design-view-images-button, #manufacturing-view-images-button {
     font-size: 100%;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -170,12 +170,13 @@ li a:hover {
     height: 10vmin;
 }
 
-#contact-us-button:hover {
+#contact-us-button:hover, #custom-view-images-button:hover, 
+#design-view-images-button:hover, #military-view-images-button:hover, #manufacturing-view-images-button:hover {
     background-color: #940f15;
     color: #fff;
 }
 
-#manufacturing-container #contact-us-button:hover {
+#manufacturing-container #contact-us-button:hover, #manufacturing-view-images-button:hover  {
     background-color: #0c2141;
 }
 /* ABOUT SECTION ENDS */

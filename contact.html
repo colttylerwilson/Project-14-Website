@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Project 14 | Custom Crating and Precision CNC Manufacturing</title>
+</head>
+
+<body>
+    <header>
+        <div id="banner-container">
+            <div id="banner-flex-box-1">
+                <p>Project</p>
+                <p id="banner-14">14</p>
+            </div>
+            <div id="banner-flex-box-2">
+                <h2>Custom Crating and Precision CNC Manufacturing</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+        <div id="contact-page-container">
+            <div id="locations">
+                <h1>Locations</h1>
+                <p>Project 14</p>
+                <address>12785 Magnolia Ave Suite 3 Riverside, CA 92503</address>
+                <p>Telepohone</p>
+                <a href="tel:9515499366">(951) 549-9366</a>
+                <p>Fax</p>
+                <p>(951) 549-1461</p>
+                <div id="map">
+                </div>
+                <script>
+                    // Initialize and add the map
+                    function initMap() {
+                        // The location of Project 14
+                        var project = { lat: 33.886173, lng: -117.508503 };
+                        // The map, centered at Uluru
+                        var map = new google.maps.Map(
+                            document.getElementById('map'), { zoom: 4, center: { lat: 33.886173, lng: -117.508503 } });
+                        // The marker, positioned at Uluru
+                        var marker = new google.maps.Marker({ position: project, map: map });
+                    }
+                </script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAitspQihS4MGVeMvSNzHu5ma-lSvlVm9o&callback=initMap">
+
+                </script>
+            </div>
+            <div id="contact-form-container">
+                <form id="contact-form" action="">
+                    <div class="contact-form-element">
+                        <p>YOUR NAME (REQUIRED)</p>
+                        <input type="text" name="your-name" size="100" aria-required="true" aria-invalid="false">
+                    </div>
+                    <div class="contact-form-element">
+                        <p>YOUR EMAIL (REQUIRED)</p>
+                        <input type="email" name="your-email" size="40" aria-required="true" aria-invalid="false">
+                    </div>
+                    <div class="contact-form-element">
+                        <p>SUBJECT</p>
+                        <input type="text" name="your-subject" size="40" aria-invalid="false">
+                    </div>
+                    <div class="contact-form-element">
+                        <p>YOUR MESSAGE</p>
+                        <textarea name="your-message" cols="40" rows="10" aria-invalid="false"></textarea>
+                    </div>
+                    <button id="submit" type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+        <script type='text/javascript' src="scripts/map.js"></script>
+</body>
+
+</html>

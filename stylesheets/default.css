@@ -134,7 +134,7 @@ li a:hover {
 
 #about-flex-box-1, #custom-flex-box-1, #manufacturing-flex-box-1, #military-flex-box-1, #design-flex-box-1 {
     align-self: center;
-    width: 50%;
+    width: 40%;
 }
 
 #about-flex-box-1 p, #custom-flex-box-1 p, #manufacturing-flex-box-1 p, #military-flex-box-1 p, #design-flex-box-1 p {
@@ -311,6 +311,11 @@ li a:hover {
     margin: 0 auto;
 }
 
+#contact-form-element-button {
+    margin: 0 auto;
+    width: 92vw;
+}
+
 #contact-form p {
     font-weight: 400;
     font-size: 10px;
@@ -349,8 +354,94 @@ textarea:hover {
     box-shadow: 0px 0px 1px 0px grey;
 }
 
+.g-recaptcha {
+    margin-top: 5vh;
+}
+
 #submit {
-    align-self: flex-start;
+    width: 20vw;
+    letter-spacing: .5vw;
+    font-size: 2vmin;
 }
 /* CONTACT ENDS */
 
+/* SIDEBAR NAV BEGINS */
+
+#mySidenav a {
+    position: fixed;
+    z-index: 3;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+/*
+#about {
+    top: 20px;
+    background-color: #4CAF50;
+}
+
+#blog {
+    top: 80px;
+    background-color: #2196F3;
+}
+
+#projects {
+    top: 140px;
+    background-color: #f44336;
+}
+
+#contact {
+    top: 200px;
+    background-color: #555
+}
+*/
+
+#crates-link {
+    top: 50vh;
+    background-color: #0c2141;
+}
+
+#manufacturing-link {
+    top: 60vh;
+    background-color: #a4b6c1;
+}
+
+#military-link {
+    top: 70vh;
+    background-color: #0c2141;
+}
+
+#design-link {
+    top: 80vh;
+    background-color: #a4b6c1;
+}
+
+#about {
+    top: 50vh;
+    background-color: #0c2141;
+}
+
+#blog {
+    top: 60vh;
+    background-color: #a4b6c1;
+}
+
+#projects {
+    top: 70vh;
+    background-color: #f44336;
+}
+
+#contact {
+    top: 80vh;
+    background-color: #555;
+}
+/* SIDEBAR NAV ENDS */

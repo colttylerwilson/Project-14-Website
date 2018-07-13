@@ -25,36 +25,28 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a class="active" href="contact.html#contact-form-container">Contact</a></li>
         </ul>
         <div id="contact-page-container">
             <div id="locations">
                 <h1>Locations</h1>
-                <p>Project 14</p>
+                <br>
+                <p>Address</p>
                 <address>12785 Magnolia Ave Suite 3 Riverside, CA 92503</address>
+                <br>
                 <p>Telepohone</p>
                 <a href="tel:9515499366">(951) 549-9366</a>
+                <br>
                 <p>Fax</p>
                 <p>(951) 549-1461</p>
+                <br>
                 <div id="map">
                 </div>
-                <script>
-                    // Initialize and add the map
-                    function initMap() {
-                        // The location of Project 14
-                        var project = { lat: 33.886173, lng: -117.508503 };
-                        // The map, centered at Uluru
-                        var map = new google.maps.Map(
-                            document.getElementById('map'), { zoom: 4, center: { lat: 33.886173, lng: -117.508503 } });
-                        // The marker, positioned at Uluru
-                        var marker = new google.maps.Marker({ position: project, map: map });
-                    }
-                </script>
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAitspQihS4MGVeMvSNzHu5ma-lSvlVm9o&callback=initMap">
-
-                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAitspQihS4MGVeMvSNzHu5ma-lSvlVm9o&callback=initMap" async
+                    defer></script>
             </div>
             <div id="contact-form-container">
+                <h1>Find out more...</h1>
                 <form id="contact-form" action="">
                     <div class="contact-form-element">
                         <p>YOUR NAME (REQUIRED)</p>
@@ -74,6 +66,7 @@
                     </div>
                     <div id="contact-form-element-button">
                         <div class="g-recaptcha" data-sitekey="6LdZvmMUAAAAAIhXYlvlU7UphbnxaGDjh4tX5WMp"></div>
+                        <br>
                         <button id="submit" type="submit">SUBMIT</button>
                     </div>
                 </form>

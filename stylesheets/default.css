@@ -35,9 +35,9 @@ p {
     display: flex;
     justify-content: space-around;
     height: 30vh;
-    background-image: url("Untitled.png");
+    background-image: url("Building1.png");
     background-size: 700px;
-    background-position: 25%;
+    background-position: 20%;
     background-repeat: no-repeat;
 }
 
@@ -51,6 +51,15 @@ p {
 #banner-flex-box-1 p {
     font-family: 'Raleway', sans-serif;
     font-size: 10vmin;
+}
+
+#phone-number {
+    display: none;
+}
+
+#navbar-phone-number {
+    color: #fff;
+    width: 70%;
 }
 
 #banner-14 {
@@ -168,6 +177,7 @@ li a:hover {
     border: 2px solid #940f15;
     width: 40vmin;
     height: 10vmin;
+    min-width: 200px;
 }
 
 #contact-us-button:hover, #custom-view-images-button:hover,
@@ -193,11 +203,12 @@ li a:hover {
 
 #services h1 {
     letter-spacing: .5vmin;
-    font-size: 8vmin;
+    font-size: 6vmin;
     font-weight: bold;
     text-align: center;
     color: #fff;
     margin: 6vmin auto;
+    margin-top: 10vmin;
 }
 
 #services-container {
@@ -305,6 +316,7 @@ li a:hover {
 
 /* CONTACT BEGINS */
 #contact-page-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -389,6 +401,7 @@ textarea:hover {
 }
 
 .g-recaptcha {
+    width: 100%;
     margin-top: 5vh;
 }
 
@@ -552,9 +565,50 @@ textarea:hover {
 
 /* PANEL ENDS */
 
+/* FOOTER BEGINS */
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 30vmax;
+    min-height: 400px;
+    background-color: #2e598f;
+    color: #fff;
+    padding: 0 5vw; 
+}
+
+#footer-flex-box-1, #footer-flex-box-2, #footer-flex-box-3 {
+    width: 30%;
+    align-self: center;
+    height: 80%;
+    line-height: 5vh;
+    text-align: justify;
+}
+
+#footer-flex-box-3 p {
+    margin: 0;
+    padding: 0;
+
+}
+
+#footer-flex-box-3 a {
+    color: #fff;
+    font-weight: bold;
+}
+/* FOOTER ENDS */
+
 /* MEDIA QUERY BEGINS */
+
+li a {
+    min-width: 100px;
+}
+
+li {
+    min-width: 100px;
+}
 @media only screen and (min-width: 700px) {
     #contact-page-container {
+        width: 100%;
         display: flex;
         flex-direction: row;
     }
@@ -565,6 +619,79 @@ textarea:hover {
 
     #contact-form-container {
         width: 45%;
+    }
+
+    #contact-form-element-button {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #mySidenav {
+        display: none;
+    }
+
+    #about-container {
+        flex-direction: column;
+        margin: 0 auto;
+        height: 100%;
+        width: 90%;
+    }
+
+    #about-flex-box-1, #about-flex-box-2 {
+        margin: 50px;
+        width: 100%;
+    }
+
+    #about-flex-box-2 > img {
+        margin: 0 auto;
+    }
+
+    #banner-flex-box-1 {
+        width: 100%;
+    }
+
+    #banner-flex-box-1 p {
+        margin: 0;
+    }
+
+    #banner-flex-box-2 {
+        display: none;
+    }
+
+    #banner-flex-box-1 #phone-number {
+        width: 100%;
+        display: block;
+        font-size: 5vmin;
+    }
+
+    #navbar-phone-number {
+        display: none;
+    }
+
+    #services {
+        display: none;
+    }
+
+    #contact-form-element-button {
+        padding-bottom: 100px;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #footer-flex-box-1, #footer-flex-box-2, #footer-flex-box-3 {
+        width: 90%;
     }
 }
 /* MEDIA QUERY ENDS */

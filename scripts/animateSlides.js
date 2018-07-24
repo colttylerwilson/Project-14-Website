@@ -1,6 +1,6 @@
 var myIndex = 0;
 cratingCarousel();
-manufacturingCarousel();
+corrugatedCarousel();
 militaryCarousel();
 designCarousel();
 
@@ -16,16 +16,16 @@ function cratingCarousel() {
     setTimeout(cratingCarousel, 5000);
 }
 
-function manufacturingCarousel() {
+function corrugatedCarousel() {
     var i;
-    var x = document.getElementsByClassName("manufacturingSlides");
+    var x = document.getElementsByClassName("corrugatedSlides");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
     myIndex++;
     if (myIndex > x.length) { myIndex = 1 }
     x[myIndex - 1].style.display = "block";
-    setTimeout(manufacturingCarousel, 5000);
+    setTimeout(corrugatedCarousel, 5000);
 }
 
 function militaryCarousel() {

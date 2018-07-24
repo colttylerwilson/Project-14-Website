@@ -2,10 +2,20 @@
 <html lang="en-US">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122582712-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-122582712-1');
+
+    </script>
     <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>Project 14 | Custom Crating and Precision CNC Manufacturing</title>
+    <title>Project 14 | Creative Design Wood Crating Company</title>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
@@ -15,32 +25,31 @@
             <div id="banner-flex-box-1">
                 <p>Project</p>
                 <p id="banner-14">14</p>
-                <div id="phone-number">(951) 549-9366</div>
+                <div id="phone-number">Tan@Project14.com (951) 549-9366</div>
             </div>
             <div id="banner-flex-box-2">
-                <h2>Custom Crating and Precision CNC Manufacturing</h2>
+                <h2>Creative Design Wood Crating Company</h2>
             </div>
         </div>
     </header>
     <main>
         <ul>
-            <li><a href="index.html#about-container">Home</a></li>
+            <li><a href="home.html#about-container">Home</a></li>
             <li><a href="services.html#custom-crates">Services</a></li>
             <li><a class="active" href="contact.html#contact-form-container">Contact</a></li>
-            <li id="navbar-phone-number">(951) 549-9366</li>
+            <li id="navbar-phone-number">Tan@Project14.com (951) 549-9366</li>
         </ul>
         <div id="contact-page-container">
             <div id="locations">
                 <h1>Locations</h1>
                 <br>
-                <p>Address</p>
                 <address>12785 Magnolia Ave Suite 3 Riverside, CA 92503</address>
                 <br>
-                <p>Telepohone</p>
+                <h1>Contact Information</h1>
+                <br>
+                <p><a href="mailto:tan@project14.com">Tan@Project14.com</a></p>
                 <a href="tel:9515499366">(951) 549-9366</a>
                 <br>
-                <p>Fax</p>
-                <p>(951) 549-1461</p>
                 <br>
                 <div id="map">
                 </div>
@@ -49,14 +58,14 @@
             </div>
             <div id="contact-form-container">
                 <h1>Find out more...</h1>
-                <form id="contact-form" action="">
+                <form id="contact-form" method="post" action="send_mail.php">
                     <div class="contact-form-element">
                         <p>YOUR NAME (REQUIRED)</p>
-                        <input type="text" name="your-name" size="100" aria-required="true" aria-invalid="false">
+                        <input type="text" name="first_name" size="100" aria-required="true" aria-invalid="false">
                     </div>
                     <div class="contact-form-element">
                         <p>YOUR EMAIL (REQUIRED)</p>
-                        <input type="email" name="your-email" size="40" aria-required="true" aria-invalid="false">
+                        <input type="email" name="email_address" size="40" aria-required="true" aria-invalid="false">
                     </div>
                     <div class="contact-form-element">
                         <p>SUBJECT</p>
@@ -64,7 +73,7 @@
                     </div>
                     <div class="contact-form-element">
                         <p>YOUR MESSAGE</p>
-                        <textarea name="your-message" cols="40" rows="10" aria-invalid="false"></textarea>
+                        <textarea name="comments" cols="40" rows="10" aria-invalid="false"></textarea>
                     </div>
                     <div id="contact-form-element-button">
                         <div class="g-recaptcha" data-sitekey="6LdZvmMUAAAAAIhXYlvlU7UphbnxaGDjh4tX5WMp"></div>
@@ -89,11 +98,9 @@
         </div>
         <div id="footer-flex-box-3">
             <h2>Contact</h2>
+            <p>Email: Tan@Project14.com</p>
+            <p>Phone: <a href="tel:9515499366">(951) 549-9366</a></p>
             <address>12785 Magnolia Ave Suite 3 Riverside, CA 92503</address>
-            <p>Telephone</p>
-            <a href="tel:9515499366">(951) 549-9366</a>
-            <p>Fax</p>
-            <p>(951) 549-1461</p>
         </div>
     </footer>
     <script type='text/javascript' src="scripts/map.js"></script>

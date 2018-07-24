@@ -19,6 +19,7 @@ h1 {
 h2 {
     height: 5vmin;
     font-size: 3.5vmin;
+    font-size:calc(10px + 2.5vmin);
 }
 
 p {
@@ -117,42 +118,42 @@ li a:hover {
 
 /* ABOUT SECTION BEGINS */
 
-#about-container, #custom-container, #manufacturing-container, #military-container, #design-container {
+#about-container, #custom-container, #corrugated-container, #military-container, #design-container, #foam-container, #cooler-container {
     display: flex;
     height: 100vh;
     justify-content: space-around;
 }
 
-#manufacturing-container {
+#corrugated-container, #foam-container {
     background-color: #940f15;
     color: #fff;
 }
 
-#military-container {
+#military-container, #cooler-container {
     background-color: #2e598f;
     color: #fff;
 }
 
-#manufacturing-container h1 {
+#corrugated-container h1, #foam-container h1 {
     color: #fff;
 }
 
-#military-container h1 {
+#military-container h1, #cooler-container h1 {
     color: #fff;
 }
 
-#about-flex-box-1, #custom-flex-box-1, #manufacturing-flex-box-1, #military-flex-box-1, #design-flex-box-1 {
+#about-flex-box-1, #custom-flex-box-1, #corrugated-flex-box-1, #military-flex-box-1, #cooler-flex-box-1, #design-flex-box-1, #foam-flex-box-1 {
     align-self: center;
     width: 40%;
 }
 
-#about-flex-box-1 p, #custom-flex-box-1 p, #manufacturing-flex-box-1 p, #military-flex-box-1 p, #design-flex-box-1 p {
+#about-flex-box-1 p, #custom-flex-box-1 p, #corrugated-flex-box-1 p, #military-flex-box-1 p, #cooler-flex-box-1 p, #design-flex-box-1 p, #foam-flex-box-1 p {
     letter-spacing: .25vmin;
     text-align: justify;
     line-height: 5vmin;
 }
 
-#about-flex-box-2, #custom-flex-box-2, #manufacturing-flex-box-2, #military-flex-box-2, #design-flex-box-2 {
+#about-flex-box-2, #custom-flex-box-2, #corrugated-flex-box-2, #foam-flex-box-2, #military-flex-box-2, #cooler-flex-box-2, #design-flex-box-2 {
     align-self: center;
     width: 40%;
 }
@@ -162,7 +163,7 @@ li a:hover {
     height: auto;
 }
 
-#contact-us-button, #custom-view-images-button, #military-view-images-button, #design-view-images-button, #manufacturing-view-images-button {
+#contact-us-button, #custom-view-images-button, #military-view-images-button, #design-view-images-button, #corrugated-view-images-button {
     font-size: 100%;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -181,12 +182,12 @@ li a:hover {
 }
 
 #contact-us-button:hover, #custom-view-images-button:hover,
-#design-view-images-button:hover, #military-view-images-button:hover, #manufacturing-view-images-button:hover {
+#design-view-images-button:hover, #military-view-images-button:hover, #corrugated-view-images-button:hover {
     background-color: #940f15;
     color: #fff;
 }
 
-#manufacturing-container #contact-us-button:hover, #manufacturing-view-images-button:hover  {
+#corrugated-container #contact-us-button:hover, #corrugated-view-images-button:hover  {
     background-color: #0c2141;
 }
 /* ABOUT SECTION ENDS */
@@ -198,7 +199,7 @@ li a:hover {
     flex-direction: column;
     background-color: #940f15;
     color: #fff;
-    height: 100vh;
+    height: 150vh;
 }
 
 #services h1 {
@@ -214,9 +215,8 @@ li a:hover {
 #services-container {
     width: 90%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 6fr 2fr;
-    grid-gap: 1vmin 5vmin;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5vmin 5vmin;
     text-align: center;
     margin: 0 auto;
 }
@@ -226,7 +226,7 @@ li a:hover {
 }
 
 .icon-image {
-    height: 85%;
+    height: 30px;
     margin: 5% auto;
     vertical-align: middle;
 }
@@ -235,24 +235,24 @@ li a:hover {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    width: 20%;
+    width: 90%;
     text-align: center;
 }
 
 .services-flex-box p {
     font-size: 2vh;
     line-height: 5vmin;
-    height: 50%;
+    height: 140px;
     overflow: auto;
 }
 
 .services-flex-box button {
     align-self: flex-end;
-    height: 15%;
+    height: 50px;
     width: 100%;
 }
 
-.view-more {
+button.view-more {
     font-size: 100%;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -265,8 +265,8 @@ li a:hover {
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     border: 2px solid #940f15;
-    width: 40vmin;
     height: 10vmin;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -455,22 +455,32 @@ textarea:hover {
 */
 
 #crates-link {
-    top: 50vh;
+    top: 41vh;
     background-color: #0c2141;
 }
 
-#manufacturing-link {
-    top: 60vh;
+#corrugated-link {
+    top: 51vh;
     background-color: #a4b6c1;
 }
 
 #military-link {
-    top: 70vh;
+    top: 61vh;
     background-color: #0c2141;
 }
 
 #design-link {
-    top: 80vh;
+    top: 71vh;
+    background-color: #a4b6c1;
+}
+
+#foam-link {
+    top: 81vh;
+    background-color: #0c2141;
+}
+
+#cooler-link {
+    top: 91vh;
     background-color: #a4b6c1;
 }
 
@@ -628,6 +638,18 @@ li {
 }
 
 @media only screen and (max-width: 800px) {
+    #about-container, #custom-container, #corrugated-container, #military-container, #design-container, #foam-container, #cooler-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .expand-width {
+        width: 100%;
+    }
+
+    #military-container {
+        height: 100%;
+    }
     ul {
         width: 100%;
         display: flex;
@@ -692,6 +714,16 @@ li {
 
     #footer-flex-box-1, #footer-flex-box-2, #footer-flex-box-3 {
         width: 90%;
+    }
+
+    #custom-flex-box-1, #corrugated-flex-box-1, #military-flex-box-1, #cooler-flex-box-1, #design-flex-box-1, #foam-flex-box-1 {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    #custom-flex-box-2, #corrugated-flex-box-2, #foam-flex-box-2, #military-flex-box-2, #cooler-flex-box-2, #design-flex-box-2 {
+        width: 90%;
+        padding-bottom: 20px;
     }
 }
 /* MEDIA QUERY ENDS */

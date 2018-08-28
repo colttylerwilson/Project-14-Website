@@ -1,8 +1,10 @@
 var myIndex = 0;
 cratingCarousel();
-corrugatedCarousel();
 militaryCarousel();
 designCarousel();
+coolerCarousel();
+foamCarousel();
+corrugatedCarousel();
 
 function cratingCarousel() {
     var i;
@@ -49,5 +51,29 @@ function designCarousel() {
     myIndex++;
     if (myIndex > x.length) { myIndex = 1 }
     x[myIndex - 1].style.display = "block";
-    setTimeout(militaryCarousel, 5000);
+    setTimeout(designCarousel, 5000);
+}
+
+function coolerCarousel() {
+    var i;
+    var x = document.getElementsByClassName("coolerSlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(coolerCarousel, 5000);
+}
+
+function foamCarousel() {
+    var i;
+    var x = document.getElementsByClassName("foamSlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(foamCarousel, 5000);
 }

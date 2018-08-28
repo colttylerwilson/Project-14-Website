@@ -158,7 +158,7 @@ li a:hover {
 #about-flex-box-1 p, #custom-flex-box-1 p, #corrugated-flex-box-1 p, #military-flex-box-1 p, #cooler-flex-box-1 p, #design-flex-box-1 p, #foam-flex-box-1 p {
     letter-spacing: .25vmin;
     text-align: justify;
-    line-height: 5vmin;
+    line-height: 5vh;
 }
 
 #about-flex-box-2, #custom-flex-box-2, #corrugated-flex-box-2, #foam-flex-box-2, #military-flex-box-2, #cooler-flex-box-2, #design-flex-box-2 {
@@ -249,7 +249,7 @@ li a:hover {
 
 .services-flex-box p {
     font-size: 2vh;
-    line-height: 5vmin;
+    line-height: 5vh;
     height: 140px;
     overflow: auto;
 }
